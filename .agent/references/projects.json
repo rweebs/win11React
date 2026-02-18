@@ -1,0 +1,48 @@
+[
+    {
+        "id": "sahabat-stk",
+        "title": "Sahabat STK PMSOL",
+        "description": "An internal RAG (Retrieval-Augmented Generation) chatbot designed for Pertamina Marine Solutions. It allows employees to instantly search and retrieve company policy documents through natural language queries.",
+        "stack": [
+            "Python",
+            "RAG",
+            "LLM",
+            "Internal Tool"
+        ],
+        "icon": "chat_icon",
+        "category": "Enterprise Solutions",
+        "status": "Production",
+        "link": "#",
+        "gallery": [
+            {
+                "src": "/img/projects/stk-1.png",
+                "caption": "Main Chat Interface"
+            },
+            {
+                "src": "/img/projects/stk-2.png",
+                "caption": "Policy Search Results"
+            }
+        ]
+    },
+    {
+        "id": "zammad-helpdesk",
+        "title": "Centralized Service Desk",
+        "description": "Implementation of Zammad as an open-source IT service desk solution. Features include OIDC authentication, WhatsApp integration for ticket creation, and cost-effective scaling compared to proprietary alternatives.",
+        "stack": [
+            "Zammad",
+            "DevOps",
+            "Open Source",
+            "Integration"
+        ],
+        "icon": "support_icon",
+        "category": "Enterprise Solutions",
+        "status": "Implemented",
+        "link": "#",
+        "gallery": [
+            {
+                "src": "/img/projects/zammad.png",
+                "caption": "Agent Ticket Dashboard"
+            }
+        ]
+    }
+]

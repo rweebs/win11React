@@ -24,6 +24,12 @@ const config = ({ mode }) => {
         },
       },
     },
+    server: {
+      fs: {
+        strict: true,
+        allow: ["."],
+      },
+    },
   });
 };
 

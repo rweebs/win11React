@@ -254,15 +254,15 @@ export const WnTerminal = () => {
     } else if (type == "time") {
       tmpStack.push(
         "The current time is: " +
-          new Date()
-            .toLocaleTimeString("en-GB", {
-              hour: "2-digit",
-              minute: "2-digit",
-              second: "2-digit",
-            })
-            .replaceAll(":", ".") +
-          "." +
-          Math.floor(Math.random() * 100),
+        new Date()
+          .toLocaleTimeString("en-GB", {
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+          })
+          .replaceAll(":", ".") +
+        "." +
+        Math.floor(Math.random() * 100),
       );
     } else if (type == "exit") {
       tmpStack = ["OS [Version 10.0.22000.51]", ""];
@@ -279,8 +279,6 @@ export const WnTerminal = () => {
       tmpStack.push("French");
     } else if (type == "blue") {
       tmpStack.push("blueedgetechno");
-    } else if (type == "dev") {
-      tmpStack.push("https://dev.blueedge.me/");
     } else if (type == "ver") {
       tmpStack.push("OS [Version 10.0.22000.51]");
     } else if (type == "systeminfo") {
@@ -351,23 +349,23 @@ export const WnTerminal = () => {
   const colorCode = (color) => {
     let code = "#000000";
     /*
-			0: Black
-			1: Blue
-			2: Green
-			3: Cyan
-			4: Red
-			5: Magenta
-			6: Brown
-			7: Light Gray
-			8: Dark Gray
-			9: Light Blue
-			A: Light Green
-			B: Light Cyan
-			C: Light Red
-			D: Light Magenta
-			E: Yellow
-			F: White
-		*/
+      0: Black
+      1: Blue
+      2: Green
+      3: Cyan
+      4: Red
+      5: Magenta
+      6: Brown
+      7: Light Gray
+      8: Dark Gray
+      9: Light Blue
+      A: Light Green
+      B: Light Cyan
+      C: Light Red
+      D: Light Magenta
+      E: Yellow
+      F: White
+    */
 
     switch (color.toUpperCase()) {
       case "0":

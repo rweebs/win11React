@@ -2,6 +2,7 @@ var wps = localStorage.getItem("wps") || 0;
 var locked = localStorage.getItem("locked");
 
 const walls = [
+  "custom/img0.jpg",
   "default/img0.jpg",
   "dark/img0.jpg",
   "ThemeA/img0.jpg",
@@ -22,7 +23,7 @@ const walls = [
   "ThemeD/img3.jpg",
 ];
 
-const themes = ["default", "dark", "ThemeA", "ThemeB", "ThemeD", "ThemeC"];
+const themes = ["custom", "default", "dark", "ThemeA", "ThemeB", "ThemeD", "ThemeC"];
 
 const defState = {
   themes: themes,

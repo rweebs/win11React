@@ -31,39 +31,31 @@ export const AboutWin = () => {
   return open || abOpen ? (
     <div className="aboutApp floatTab dpShad">
       <div className="content p-6">
-        <div className="text-xl font-semibold">{t("about.title")}</div>
-        <p>{t("about.opensource")}</p>
+        <div className="text-xl font-semibold">Welcome to my Portfolio</div>
         <p>
-          {t("about.licensed")}&nbsp;
-          <a
-            target="_blank"
-            href="https://github.com/blueedgetechno/win11React/blob/master/LICENSE"
-            rel="noreferrer"
-          >
-            {t("about.Creative-Commons")}
-          </a>
-          .
+          This is an interactive Windows 11-style portfolio built with React.
+        </p>
+        <p>
+          Explore my projects through the <b>Portfolio</b> app, or reach out via
+          the <b>Contact Me</b> app.
         </p>
         <p className="pl-4">
-          {t("about.contact")} :&nbsp;
-          <a target="_blank" href="mailto:blue@win11react.com" rel="noreferrer">
-            blue@win11react.com
+          Contact :&nbsp;
+          <a target="_blank" href="mailto:rahmat.wibowo21@gmail.com" rel="noreferrer">
+            rahmat.wibowo21@gmail.com
           </a>
         </p>
-
-        <p>{t("about.notmicrosoft")}</p>
         <p>
-          {t("about.alsonot")}&nbsp;
+          Connect with me on&nbsp;
           <a
             target="_blank"
-            href="https://www.microsoft.com/en-in/windows-365"
+            href="https://www.linkedin.com/in/rahmatwibowo/"
             rel="noreferrer"
           >
-            Windows 365 cloud PC
+            LinkedIn
           </a>
           .
         </p>
-        <p>{t("about.microsoftcopywrite")}.</p>
       </div>
       <div className="okbtn px-6 py-4">
         <div data-allow={timer == 0} onClick={timer == 0 && action}>

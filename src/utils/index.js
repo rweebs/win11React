@@ -3,60 +3,44 @@ import icons from "./apps";
 var { taskbar, desktop, pinned, recent } = {
   taskbar: (localStorage.getItem("taskbar") &&
     JSON.parse(localStorage.getItem("taskbar"))) || [
-    "Settings",
-    "File Explorer",
-    "Browser",
-    "Store",
-    "Spotify",
-  ],
+      "Portfolio",
+      "File Explorer",
+      "Browser",
+      "Contact Me",
+      "Settings",
+    ],
   desktop: (localStorage.getItem("desktop") &&
     JSON.parse(localStorage.getItem("desktop"))) || [
-    "Blue",
-    "Unescape",
-    "Recycle Bin",
-    "File Explorer",
-    "Store",
-    "Browser",
-    "Github",
-    "Spotify",
-    "Buy me a coffee",
-  ],
+      "Portfolio",
+      "Contact Me",
+      "LinkedIn",
+      "Recycle Bin",
+      "File Explorer",
+      "Browser",
+      "Github",
+    ],
   pinned: (localStorage.getItem("pinned") &&
     JSON.parse(localStorage.getItem("pinned"))) || [
-    "Browser",
-    "Get Started",
-    "Task Manager",
-    "Mail",
-    "Settings",
-    "Store",
-    "Unescape",
-    "Buy me a coffee",
-    "Notepad",
-    "Whiteboard",
-    "Calculator",
-    "Spotify",
-    "Twitter",
-    "File Explorer",
-    "Terminal",
-    "Github",
-    "Discord",
-    "Camera",
-  ],
+      "Portfolio",
+      "Browser",
+      "Contact Me",
+      "Settings",
+      "Notepad",
+      "Calculator",
+      "File Explorer",
+      "Terminal",
+      "Github",
+      "LinkedIn",
+    ],
   recent: (localStorage.getItem("recent") &&
     JSON.parse(localStorage.getItem("recent"))) || [
-    "Mail",
-    "Twitter",
-    "Terminal",
-    "Github",
-    "File Explorer",
-    "Spotify",
-    "Edge",
-  ],
+      "Terminal",
+      "Github",
+      "File Explorer",
+      "Browser",
+    ],
 };
 
-if (desktop.includes("Buy me a coffee") === false) {
-  desktop.push("Buy me a coffee");
-}
 
 export const taskApps = icons.filter((x) => taskbar.includes(x.name));
 

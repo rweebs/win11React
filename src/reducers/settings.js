@@ -17,7 +17,7 @@ const defState = {
     },
   },
   person: {
-    name: "Blue Edge",
+    name: "Rahmat Wibowo",
     theme: "light",
     color: "blue",
   },

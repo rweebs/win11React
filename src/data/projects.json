@@ -1,0 +1,173 @@
+[
+    {
+        "id": "sahabat-stk",
+        "title": "Sahabat STK PMSOL",
+        "description": "An internal RAG (Retrieval-Augmented Generation) chatbot designed for Pertamina Marine Solutions. Allows employees to instantly search and retrieve company policy documents through natural language queries.",
+        "stack": [
+            "Python",
+            "RAG",
+            "LLM",
+            "Internal Tool"
+        ],
+        "category": "Enterprise Solutions",
+        "status": "Production",
+        "link": "#",
+        "gallery": [
+            {
+                "src": "/img/projects/stk-1.png",
+                "caption": "Main Chat Interface"
+            },
+            {
+                "src": "/img/projects/stk-2.png",
+                "caption": "Policy Search Results"
+            }
+        ]
+    },
+    {
+        "id": "zammad-helpdesk",
+        "title": "Centralized Service Desk",
+        "description": "Implementation of Zammad as an open-source IT service desk solution. Features include OIDC authentication, WhatsApp integration for ticket creation, and cost-effective scaling compared to proprietary alternatives.",
+        "stack": [
+            "Zammad",
+            "DevOps",
+            "Open Source",
+            "Integration"
+        ],
+        "category": "Enterprise Solutions",
+        "status": "Implemented",
+        "link": "#",
+        "gallery": [
+            {
+                "src": "/img/projects/zammad.png",
+                "caption": "Agent Ticket Dashboard"
+            }
+        ]
+    },
+    {
+        "id": "unified-portal",
+        "title": "Unified Portal",
+        "description": "A unified portal that consolidates multiple applications and services into a single, seamless interface for improved productivity and user experience. It has public view and protected view for internal users.",
+        "stack": [
+            "Web",
+            "Integration",
+            "Enterprise"
+        ],
+        "category": "Enterprise Solutions",
+        "status": "Production",
+        "link": "#",
+        "gallery": [
+            {
+                "src": "/img/projects/portal-1.png",
+                "caption": "Portal Dashboard"
+            },
+            {
+                "src": "/img/projects/portal-2.png",
+                "caption": "Portal Overview"
+            }
+        ]
+    },
+    {
+        "id": "realtime-cdc-flink",
+        "title": "Realtime Database Sync",
+        "description": "A deep dive into implementing Change Data Capture (CDC) using Apache Flink to sync PostgreSQL data with Elasticsearch in real-time. This article covers the architecture, configuration, and implementation details for building robust data pipelines.",
+        "stack": [
+            "Apache Flink",
+            "PostgreSQL",
+            "Elasticsearch",
+            "CDC"
+        ],
+        "category": "Data Engineering",
+        "status": "Published",
+        "link": "https://rahmat-wibowo21.medium.com/database-series-realtime-database-sync-using-cdc-with-apache-flink-postgresql-to-elasticsearch-b4ed1fa576e3",
+        "gallery": [
+            {
+                "src": "/img/projects/flink-1.png",
+                "caption": "Realtime CDC Architecture"
+            },
+            {
+                "src": "/img/projects/flink-2.png",
+                "caption": "Flink Dashboard"
+            }
+        ]
+    },
+    {
+        "id": "grafana-monitoring",
+        "title": "Application Monitoring with Grafana",
+        "description": "A comprehensive guide on implementing application monitoring using the Grafana stack (Prometheus, Loki, and Tempo). This article explains how to achieve full observability (Metrics, Logs, and Traces) without modifying your application code.",
+        "stack": [
+            "Grafana",
+            "Prometheus",
+            "DevOps",
+            "Observability"
+        ],
+        "category": "DevOps",
+        "status": "Published",
+        "link": "https://rahmat-wibowo21.medium.com/devops-series-monitoring-your-application-without-modifying-your-code-with-grafana-stack-6e6495336164",
+        "gallery": [
+            {
+                "src": "/img/projects/grafana.png",
+                "caption": "Grafana Dashboard Monitoring"
+            }
+        ]
+    },
+    {
+        "id": "postgresql-monitoring",
+        "title": "PostgreSQL Monitoring & Stress Test",
+        "description": "A deep dive into monitoring PostgreSQL performance using Prometheus and Grafana. This article also covers how to perform database stress testing to identify bottlenecks and ensure system reliability under heavy loads.",
+        "stack": [
+            "PostgreSQL",
+            "Prometheus",
+            "Grafana",
+            "Stress Testing"
+        ],
+        "category": "DevOps",
+        "status": "Published",
+        "link": "https://rahmat-wibowo21.medium.com/database-series-complete-postgresql-monitoring-with-prometheus-and-grafana-and-database-stress-f21a3c093159",
+        "gallery": [
+            {
+                "src": "/img/projects/postgresql-monitoring.png",
+                "caption": "PostgreSQL Monitoring Dashboard"
+            }
+        ]
+    },
+    {
+        "id": "infracost-management",
+        "title": "Infrastructure Cost Management",
+        "description": "A guide on using Infracost to estimate and manage cloud infrastructure costs directly within the DevOps workflow. This article covers integration with Terraform and CI/CD pipelines to provide visibility into cost changes before they are deployed.",
+        "stack": [
+            "Infracost",
+            "Terraform",
+            "DevOps",
+            "Cost Optimization"
+        ],
+        "category": "DevOps",
+        "status": "Published",
+        "link": "https://rahmat-wibowo21.medium.com/devops-series-manage-infrastructure-cost-changes-using-infracost-io-73dd1effec8d",
+        "gallery": [
+            {
+                "src": "/img/projects/infracost.png",
+                "caption": "Infracost CLI Cost Estimation"
+            }
+        ]
+    },
+    {
+        "id": "terraformer-azure",
+        "title": "Azure to Terraform with Terraformer",
+        "description": "A technical guide on using Terraformer to reverse-engineer existing Azure cloud resources into Terraform files. This process enables infrastructure team to bring manually created resources under Infrastructure as Code (IaC) control efficiently.",
+        "stack": [
+            "Terraform",
+            "Azure",
+            "Terraformer",
+            "IaC"
+        ],
+        "category": "DevOps",
+        "status": "Published",
+        "link": "https://rahmat-wibowo21.medium.com/devops-series-exporting-existing-cloud-resources-to-terraform-files-using-terraformer-in-azure-cb9144d919d3",
+        "gallery": [
+            {
+                "src": "/img/projects/terraformer.png",
+                "caption": "Terraformer Export Process"
+            }
+        ]
+    }
+]

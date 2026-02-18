@@ -1,0 +1,272 @@
+@use "sass:color";
+
+.contactApp {
+    --contact-accent: #0078d4;
+    --contact-bg: rgba(243, 243, 243, 0.92);
+    --contact-sidebar-bg: rgba(238, 238, 238, 0.7);
+    --contact-card-bg: #ffffff;
+    --contact-text: #1a1a1a;
+    --contact-text-secondary: #616161;
+    --contact-border: rgba(0, 0, 0, 0.0578);
+    --contact-input-bg: #ffffff;
+    --contact-input-border: rgba(0, 0, 0, 0.12);
+    --contact-success-bg: rgba(16, 185, 129, 0.08);
+    --contact-success-text: #059669;
+}
+
+.contactApp .windowScreen {
+    background: var(--contact-bg);
+}
+
+// Sidebar
+.contactApp .contactSidebar {
+    width: 200px;
+    min-width: 200px;
+    background: var(--contact-sidebar-bg);
+    backdrop-filter: blur(20px);
+    border-right: 1px solid var(--contact-border);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+
+    .sidebarTitle {
+        padding: 0 20px 16px;
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--contact-text);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .folderList {
+        padding: 0 8px;
+
+        .folderItem {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            color: var(--contact-text-secondary);
+            cursor: pointer;
+            transition: all 0.15s ease;
+            user-select: none;
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.04);
+            }
+
+            &[data-active="true"] {
+                background: rgba(0, 120, 212, 0.06);
+                color: var(--contact-accent);
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+// Main Content
+.contactApp .contactContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 32px 40px;
+
+    .contactHeader {
+        margin-bottom: 28px;
+
+        .contactTitle {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--contact-text);
+            margin-bottom: 6px;
+        }
+
+        .contactSubtitle {
+            font-size: 13px;
+            color: var(--contact-text-secondary);
+        }
+    }
+}
+
+// Form
+.contactForm {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .formLabel {
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--contact-text);
+    }
+
+    .formInput,
+    .formSelect {
+        padding: 10px 14px;
+        border: 1px solid var(--contact-input-border);
+        border-radius: 6px;
+        font-size: 13px;
+        color: var(--contact-text);
+        background: var(--contact-input-bg);
+        outline: none;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        font-family: 'Segoe UI', sans-serif;
+
+        &:focus {
+            border-color: var(--contact-accent);
+            box-shadow: 0 0 0 1px var(--contact-accent);
+        }
+
+        &::placeholder {
+            color: #999;
+        }
+    }
+
+    .formSelect {
+        cursor: pointer;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        padding-right: 36px;
+    }
+
+    .formTextarea {
+        padding: 10px 14px;
+        border: 1px solid var(--contact-input-border);
+        border-radius: 6px;
+        font-size: 13px;
+        color: var(--contact-text);
+        background: var(--contact-input-bg);
+        outline: none;
+        resize: vertical;
+        min-height: 120px;
+        font-family: 'Segoe UI', sans-serif;
+        line-height: 1.6;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+        &:focus {
+            border-color: var(--contact-accent);
+            box-shadow: 0 0 0 1px var(--contact-accent);
+        }
+
+        &::placeholder {
+            color: #999;
+        }
+    }
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+// Submit Button
+.submitBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 28px;
+    background: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    width: fit-content;
+    user-select: none;
+
+    &:hover {
+        background: #106ebe;
+    }
+
+    &:active {
+        background: #005a9e;
+        transform: scale(0.98);
+    }
+}
+
+// Success State
+.successMessage {
+    background: var(--contact-success-bg);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    border-radius: 8px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    max-width: 560px;
+    animation: slideIn 0.3s ease;
+
+    .successIcon {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: rgba(16, 185, 129, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--contact-success-text);
+        flex-shrink: 0;
+        font-size: 16px;
+    }
+
+    .successText {
+        .successTitle {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--contact-text);
+            margin-bottom: 4px;
+        }
+
+        .successDesc {
+            font-size: 12px;
+            color: var(--contact-text-secondary);
+            line-height: 1.5;
+        }
+    }
+}
+
+.resetBtn {
+    margin-top: 16px;
+    padding: 8px 20px;
+    background: transparent;
+    border: 1px solid var(--contact-input-border);
+    border-radius: 6px;
+    font-size: 12px;
+    color: var(--contact-accent);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    width: fit-content;
+
+    &:hover {
+        background: rgba(0, 120, 212, 0.04);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

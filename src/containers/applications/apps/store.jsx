@@ -475,38 +475,6 @@ const FrontPage = (props) => {
         ext
       />
       <div className="panelName absolute m-6 text-xl top-0">Home</div>
-      <div className="w-full overflow-x-scroll noscroll overflow-y-hidden -mt-16">
-        <div className="storeRibbon">
-          {ribbon &&
-            ribbon.map((x, i) => {
-              return x == "unescape" ? (
-                <a
-                  key={i}
-                  href="https://blueedge.me/unescape"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Image
-                    className="mx-1 dpShad rounded"
-                    var={x}
-                    h={100}
-                    dir="store/float"
-                    src={x}
-                  />
-                </a>
-              ) : (
-                <Image
-                  key={i}
-                  className="mx-1 dpShad rounded"
-                  var={x}
-                  h={100}
-                  dir="store/float"
-                  src={x}
-                />
-              );
-            })}
-        </div>
-      </div>
       <div
         id="apprib"
         className="frontCont amzApps my-8 py-20 w-auto mx-8 \

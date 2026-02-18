@@ -14,14 +14,9 @@ export const EdgeMenu = () => {
     "https://www.google.com/webhp?igu=1": "Google",
     "https://bing.com": "Bing",
     "https://www.youtube.com/embed/m0EHSoZzHEA": "Youtube",
-    "https://blueedge.me": "blueedge",
     "https://andrewstech.me": "\nandrewstech",
-    "https://blueedge.me/unescape": "Unescape",
-    "https://win11.blueedge.me": "Inception",
     "https://open.spotify.com/embed/user/jhfivkgdtg4s97pwbo1rbvr9v/playlist/6IdR78TOog83PV4XhLDvWN":
       "Spotify",
-    "https://bluelab.blueedge.me": "BlueLab",
-    "https://othello.blueedge.me": "Othello",
   };
 
   const favicons = {
@@ -228,9 +223,8 @@ export const EdgeMenu = () => {
             </LazyComponent>
 
             <div
-              className={`bg-blue-100 w-64 rounded dpShad p-2 absolute bottom-0 right-0 my-4 mx-12 transition-all ${
-                ierror ? "opacity-100" : "opacity-0 pointer-events-none"
-              }`}
+              className={`bg-blue-100 w-64 rounded dpShad p-2 absolute bottom-0 right-0 my-4 mx-12 transition-all ${ierror ? "opacity-100" : "opacity-0 pointer-events-none"
+                }`}
             >
               <div
                 className="absolute bg-red-400 m-1 text-red-900 text-xs px-1 font-bold handcr top-0 right-0 rounded hover:bg-red-500"
